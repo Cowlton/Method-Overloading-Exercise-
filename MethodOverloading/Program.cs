@@ -4,8 +4,17 @@
     {
         static void Main(string[] args)
         {
-            var result = Add(3.3,5.2,false);
+            var result = Add(3.3,5.2,true);
             Console.WriteLine(result);
+            
+            var result2 = Add(3.3,5.2);
+            Console.WriteLine(result2);
+            
+            var result3 = Add(3,5);
+            Console.WriteLine(result3);
+            
+            var result4 = Add(3,5,true);
+            Console.WriteLine(result4);
         }
 
         private static int Add(int numOne, int numTwo)
